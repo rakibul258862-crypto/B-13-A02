@@ -6,7 +6,7 @@
 }
 body{
     font-family: "Inter", sans-serif;
-    background-color: rgba(145, 0, 248, 1);
+    background-color:  rgba(26, 11, 46, 0.651);
 }
 /*navbar section*/
 .nav-container{
@@ -30,7 +30,7 @@ a{
     text-decoration: none;
     color:rgba(255, 255, 255, 1);
 }
-button{
+.btn-1{
 padding:10px;
 border-radius: 18px;
 font-size: 16px;
@@ -38,23 +38,95 @@ font-weight: 600;
 background: linear-gradient(to right, #F7E93F, #FB09B4,#9100F8);
 cursor: pointer;
 }
-nav>img{
-     display:none;
+.nav-container>span{
+    display:none;
     margin-right: 2px;
 } 
 /* banner section*/
+.banner-container{
+    max-width: 1366px;
+    min-height: 599px;
+    margin: 0 auto;
+    justify-items: center;
+    background-image: url(./assets/hero-bg.png);
+    background-size: cover;
+    width:100%;
+    
+}
+.banner-img>img{
+    width:315px;
+    height:auto;
+    border-radius: 50%;
+    position: relative;
+    top: 81px;
+    left: 69px;
+}
+.micro-img{
+    width: 151px;
+    height: 200px;
+    position: relative;
+    top: -204px;
+    left: 68px;
+}
+.mic-src{
+    width:100%;
+}
+.banner-text{
+    align-items: center;
+    position: relative;
+    top: -100px;
+    left: 77px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-text>h1{
+    font-size: 60px;
+    font-weight: 800;
+    color:#FFFFFF;
+}
+.banner-text>p{
+    font-size:16px ;
+    font-weight: 400;
+    color:rgba(255, 255, 255, 0.425);
+    padding-bottom:10px;
+}
+.banner-text>.btn-1{
+    position: relative;
+    right:55px;
+}
+.banner-text>.btn-2{
+padding:10px;
+border-radius: 18px;
+font-size: 16px;
+font-weight: 600;
+background: transparent;
+cursor: pointer;
+color:rgba(0, 255, 136, 1);
+border: 2px solid rgba(0, 255, 136, 1);
+position:relative;
+top:-42px;
+left:100px;
+}
+.top-text>h3{
+    width: 50px;
+    height: 25px;
+    border: 2px solid rgba(0, 255, 136, 1);
+    background-color:  rgba(0, 255, 136, 1);
+    color: black;
+    margin: 10px;
+    border-radius: 10px;
+    position:absolute;
+    top: 149px;
+    right: 468px;
+
+}
+/*banner section end*/
+/* about section start style*/
 
 
-
-
-
-
-
-
-
-
-
-
+/*small device responsive*/
 @media screen and (max-width:576px) {
 
 .nav-container{
@@ -70,10 +142,71 @@ nav>img{
     ul {
         display:none;
     }
-nav>img{
+.nav-container>span{
     width:24px;
     height:24px;
     display: inline;
-    margin-right: 10px;
-} 
+    margin-left: 5px;
+} /*nav bar responsive end*/
+/*banner section responsive small device*/
+.banner-container{
+    max-width: 576px;
+    max-height: 466px;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: 100% 466px;
+    top:100px;
+    left: 50px;
+    
 }
+.banner-img>img{
+        width: 143px;
+        height: 143px;
+        top: 95px;
+        left: 10px;
+
+}
+.micro-img{
+        width: 74px;
+        height: 50px;
+        position: relative;
+        top: -41px;
+        left: 10px;
+}
+.banner-text{
+    align-items: center;
+    position: relative;
+    top: 60px;
+    left: 10px;
+}
+.banner-text>h1{
+    font-size: 40px;
+    font-weight: 800;
+    color:#FFFFFF;
+}
+.banner-text>p{
+    font-size:12px ;
+    font-weight: 400;
+    color:rgba(255, 255, 255, 0.425);
+    padding:10px;
+}
+.top-text>h3{
+    top: 149px;
+    right: 133px;
+}
+.banner-text>.btn-1{
+    display: block;
+    padding:5px;
+    position: relative;
+    right:55px;
+}
+.banner-text>.btn-2{
+padding:5px;
+
+display:block;
+top:-32px;
+left:100px;
+}
+}
+
+
