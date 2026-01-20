@@ -417,7 +417,40 @@ hr{
     background-clip: text;
     -webkit-text-fill-color: transparent;
  }
- 
+ /*footer section*/
+ .footer-container{
+    max-width: 1366px;
+    min-height: 400px;
+    margin: 0 auto;
+    background-image: url(./assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:100%;
+    background-color:rgba(26, 11, 46, 1) ;
+ }
+ .footer-text{
+    font-size: 42px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top:83px;
+    left:0;
+ }
+ .footer-text>h2{
+    color:rgba(255, 255, 255, 1);
+ }
+ .footer-text>h5{
+    font-size:20px ;
+    font-weight: 500;
+    color:rgba(255, 255, 255, 0.308);
+    padding:20px;
+ }
+ .footer-text>p{
+    font-size:15px ;
+    font-weight: 500;
+    color:rgba(255, 255, 255, 0.308);
+    padding:5px;
+ }
 
 
 /*small device responsive*/
